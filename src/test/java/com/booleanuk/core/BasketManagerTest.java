@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class BasketManagerTest {
     @Test
-    public void searchForCohortThatExists(){
+    public void searchForProductThatExists(){
         //setup
         BasketManager basketManager = new BasketManager();
         String product = "Butter";
@@ -16,7 +16,7 @@ public class BasketManagerTest {
     }
 
     @Test
-    public void searchForCohortThatExists(){
+    public void searchProductThatDoesNotExists(){
         //setup
         BasketManager basketManager = new BasketManager();
         String product = "Salt";
