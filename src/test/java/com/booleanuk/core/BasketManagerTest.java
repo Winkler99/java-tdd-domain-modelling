@@ -1,0 +1,28 @@
+package com.booleanuk.core;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+public class BasketManagerTest {
+    @Test
+    public void searchForCohortThatExists(){
+        //setup
+        BasketManager basketManager = new BasketManager();
+        String product = "Butter";
+        int price = 50;
+        // Execute and Verify
+        Assertions.assertTrue(basketManager.add(product, price));
+
+    }
+
+    @Test
+    public void searchForCohortThatExists(){
+        //setup
+        BasketManager basketManager = new BasketManager();
+        String product = "Salt";
+        int price = 10;
+        // Execute and Verify
+        Assertions.assertFalse(basketManager.add(product, price));
+
+    }
+}
