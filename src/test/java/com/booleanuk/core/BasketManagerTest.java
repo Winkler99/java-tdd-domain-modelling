@@ -25,4 +25,12 @@ public class BasketManagerTest {
         Assertions.assertFalse(basketManager.add(product, price));
 
     }
+
+    @Test
+    public void TestTotal(){
+        //setup
+        BasketManager basketManager = new BasketManager();
+        //Execute and Verify
+        Assertions.assertEquals(210, basketManager.total());
+    }
 }
