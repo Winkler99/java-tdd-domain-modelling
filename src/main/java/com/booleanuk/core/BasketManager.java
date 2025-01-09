@@ -14,4 +14,12 @@ public class BasketManager {
     public boolean add(String product, int price){
         return items.containsKey(product);
     }
+
+    public int total(){
+        int totalSum = 0;
+        for (var entry : items.entrySet()){
+            totalSum += entry.getValue();
+        }
+        return totalSum;
+    }
 }
